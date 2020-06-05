@@ -8,3 +8,6 @@ __pycache__/
 # Output from robot runner
 /*.html
 /*.xml
+
+# Allow symlink to docs
+!/index.html

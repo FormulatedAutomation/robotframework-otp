@@ -2,13 +2,17 @@
 Library  OTP
 Library  DateTime
 
+*** Variables ***
+${SECRET}  base32secret
+
 *** Test Cases ***
 Get OTP from secret
-    ${otp}=    Get OTP    base32secret
+    ${otp}=    Get OTP    ${SECRET}
+    Log To Console      ${SECRET}
     Should Match Regexp	${otp}	\\d{6}
 
 Get OTP from secret with time
-    ${timestamp}=    Convert Date	2014-06-11 10:07:42.000
-    ${otp}=    Get OTP    base32secret    ${timestamp}
+    ${timestamp}=    Convert Date	${1402481262}      epoch
+    ${otp}=    Get OTP  ${SECRET}    ${timestamp}
     Should Match Regexp	${otp}	\\d{6}
-    Should Be Equal As Strings    ${otp}    285912
+    Should Be Equal As Strings    ${otp}   055118 
