@@ -10,8 +10,8 @@ Robotframework-OTP_ is a `Robot Framework`_ test
 library for generating two-factor One Time Passwords.  The project is hosted on GitHub_
 and downloads can be found from PyPI_.
 
-.. image:: https://api.travis-ci.org/itsautomic/robotframework-otp.png
-   :target: http://travis-ci.org/itsautomic/robotframework-otp
+.. image:: https://travis-ci.org/itsautomic/robotframework-otp.svg?branch=master
+    :target: https://travis-ci.org/itsautomic/robotframework-otp
 
 Libdocs
 `Libdocs <https://itsautomic.github.io/robotframework-otp>`_
