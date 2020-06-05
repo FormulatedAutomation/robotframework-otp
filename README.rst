@@ -19,7 +19,7 @@ Libdocs
 Installation
 ------------
 
-        pip install robotframework-otp
+    pip install robotframework-otp
 
 Usage
 -----
@@ -44,3 +44,8 @@ together in a higher level keyword like ``Open Connection And Log In``.
     Get OTP from secret
         ${otp}=    Get OTP    ${SECRET}
         Should Match Regexp	  ${otp}	\\d{6}
+
+Update Docs
+-----------
+
+    python -m robot.libdoc src/OTP/ doc/OTP.html
