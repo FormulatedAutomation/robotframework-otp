@@ -23,17 +23,6 @@ Installation
 Usage
 -----
 
-To use SSHLibrary in Robot Framework tests, the library needs to first be
-imported using the Library setting as any other library.
-
-When using Robot Framework, it is generally recommended to write as
-easy-to-understand tests as possible. The keywords provided by
-SSHLibrary are pretty low level and it is typically a good idea to
-write tests using Robot Framework's higher level keywords that utilize
-SSHLibrary keywords internally. This is illustrated by the following example
-where SSHLibrary keywords like ``Open Connection`` and ``Login`` are grouped
-together in a higher level keyword like ``Open Connection And Log In``.
-
 .. code:: robotframework
 
     *** Settings ***
@@ -51,3 +40,4 @@ Update Docs
 
 .. _Github: https://github.com/itsautomic/robotframework-otp
 .. _pypi: https://pypi.org/project/robotframework-otp
+.. _Robot Framework: https://robotframework.org
