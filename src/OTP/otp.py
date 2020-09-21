@@ -8,12 +8,14 @@ class OTP:
     """
 
 
-    def get_otp(self, secret, timestamp=datetime.datetime.utcnow()):
+    def get_otp(self, secret, timestamp=False):
         """Takes 1 argument and an optional timestamp argument.
 
         Example:
         | base32secret |
         | base32secret | timestamp |
         """
+        if not timestamp:
+            timestamp = datetime.datetime.utcnow()
         totp = pyotp.TOTP(secret)
         return totp.at(timestamp)
